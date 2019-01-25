@@ -16,6 +16,28 @@
     }
 }
 
+@media (max-width: 915px) and (orientation: portrait) {
+
+    .aside h3+p {
+        min-height: 65vh;
+    }
+}
+
+@media (max-width: 860px) and (orientation: portrait) {
+
+    .hobby i {
+        font-size: 25px;
+    }
+
+    .aside h3+p {
+        min-height: 65vh;
+    }
+
+    .data {
+        line-height: 20px;
+    }
+}
+
 @media (max-width: 768px) and (orientation: portrait) {
 
     div .aside {
@@ -47,11 +69,10 @@
     .reference1 {
         padding-right: 170px;
     }
-
 }
 
 /* zmiana praktycznie calego layoutu strony na maly ekran */
-@media (max-width: 415px) and (orientation: portrait) {
+@media (max-width: 700px) and (orientation: portrait) {
 
     div.wrapper {
         flex-direction: column;
@@ -60,7 +81,447 @@
     div.aside {
         position: absolute;
         left: 0;
-        top: 220px;
+        top: 170px;
+        order: 1;
+        width: 100%;
+        background: linear-gradient(to bottom, #ff9e30 0%, beige 100%);
+    }
+
+    .wrapper .aside p {
+        font-size: 18px;
+    }
+
+    .aside img {
+        margin: 20px auto;
+        width: 50%;
+    }
+
+    div.contact {
+        margin: 20px 0;
+    }
+
+    .aside h3+p {
+        min-height: 15vh;
+    }
+
+    .hobby i {
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .hobby i:nth-of-type(2) {
+        margin: 0 35px;
+    }
+
+    /* oddalenie hobbies od education, czyli headera od sekcji 1  */
+    header {
+        padding-bottom: 1090px;
+    }
+
+    /* stylowanie mojego imieni na gorze */
+    header h1 {
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .main header p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    /*  ulozenie w kolumnach informacji o edukacji itp*/
+    .text {
+        flex-direction: column;
+    }
+
+    /* ukrycie ikonek */
+    .education i,
+    .experience i,
+    .references i {
+        display: none;
+    }
+
+    /* ulozenie dat i miast obok siebie i nadanie "rodzicowi" 100% szerokosci */
+    div.info {
+        display: flex;
+        width: 100%;
+    }
+
+    /* rozmiar dat i miast */
+    .info p {
+        font-size: 13px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    /* rozmiar szkoły, firmy itp, tekstu po prawej */
+    .description p {
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+
+    /* pogrubienie nazw szkoly i uniwerku */
+    .description p:nth-of-type(1) {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /* oddalenie od siebie poszczegolnych szkol itp */
+    .description p:nth-last-of-type(1) {
+        padding-bottom: 15px;
+    }
+
+    /* referencje */
+    .data {
+        line-height: 16px;
+    }
+
+    .reference1 {
+        padding-right: 100px;
+    }
+
+    .last {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 650px) and (orientation: portrait) {
+
+    header {
+        padding-bottom: 1030px;
+    }
+
+}
+
+@media (max-width: 475px) and (orientation: portrait) {
+
+    div .aside {
+        top: 230px;
+    }
+
+    header {
+        padding-bottom: 1000px;
+    }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+
+    header {
+        padding-bottom: 1000px;
+    }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+
+    div.aside {
+        top: 210px;
+    }
+
+    /* stylowanie mojego imieni na gorze */
+    header h1 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 40px;
+    }
+
+    .main header p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .wrapper .aside p {
+        font-size: 16px;
+    }
+
+    header {
+        padding-bottom: 990px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .description p:nth-of-type(1) {
+        font-size: 16px;
+    }
+
+    .reference1 {
+        padding-right: 30px;
+    }
+
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+
+    header {
+        padding-bottom: 1020px;
+    }
+
+    div.aside {
+        top: 200px;
+    }
+
+    .aside img {
+        width: 60%;
+    }
+
+    .wrapper .aside p {
+        font-size: 16px;
+    }
+
+    .info p,
+    .description p {
+        font-size: 14px;
+    }
+
+    .description p:nth-last-of-type(1) {
+
+        font-size: 16px;
+    }
+
+}
+
+/* ZAPYTANIE O MEDIA W POZIOMIE */
+
+@media (max-width: 1366px) and (orientation: landscape) {
+
+    div.wrapper {
+        min-height: 130vh;
+        margin: 0 auto;
+    }
+
+    .aside h3+p {
+        min-height: 55vh;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    .aside h3+p {
+        min-height: 70vh;
+    }
+
+    .hobby i {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 823px) and (orientation: landscape) {
+
+    div.wrapper {
+        margin: 0 auto;
+    }
+
+    div.aside {
+        width: 25%;
+    }
+
+    .aside h3 {
+        font-size: 16px;
+    }
+
+    .aside p {
+        font-size: 12px;
+    }
+
+    .aside h3+p {
+        min-height: 140vh;
+    }
+
+    .hobby i {
+        padding: 5px;
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .intro h2 {
+        font-size: 22px;
+    }
+
+    .intro i {
+        font-size: 22px;
+    }
+
+    .data {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+
+    .aside h3+p {
+        min-height: 150vh;
+    }
+}
+
+@media (max-width: 736px) and (orientation: landscape) {
+
+    div.aside {
+        width: 27%;
+    }
+
+    .aside h3+p {
+        min-height: 145vh;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .intro i {
+        font-size: 20px;
+    }
+
+    .description p:nth-of-type(1) {
+        font-size: 18px;
+    }
+
+    /* .hobby i {
+        padding: 5px;
+        font-size: 30px;
+    } */
+
+    .data {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+
+    .aside h3 {
+        font-size: 14px;
+    }
+
+    .aside p {
+        font-size: 11px;
+    }
+
+    .aside h3+p {
+        min-height: 160vh;
+    }
+
+    .hobby i {
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+
+    .text i {
+        display: none;
+    }
+
+    .text .info {
+        padding-right: 20px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .intro i {
+        font-size: 20px;
+    }
+
+    .data {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+    header h1 {
+        padding-bottom: 10px;
+        font-size: 40px;
+    }
+
+    div.aside {
+        width: 30%;
+    }
+
+    .aside p {
+        font-size: 12px;
+    }
+
+    .aside h3+p {
+        min-height: 170vh;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .text i {
+        display: none;
+    }
+
+    .text .info {
+        padding-right: 20px;
+    }
+
+    .data {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+
+    div.aside {
+        width: 34%;
+    }
+
+    .aside h3+p {
+        min-height: 190vh;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .text .info {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+
+    div.wrapper {
+        flex-direction: column;
+    }
+
+    div.aside {
+        position: absolute;
+        left: 0;
+        top: 160px;
         order: 1;
         width: 100%;
         background: linear-gradient(to bottom, #ff9e30 0%, beige 100%);
@@ -169,209 +630,4 @@
 
     /* JAK WYSRODKOWAC NAGLOWKI EDUCTION EXPERIENCE??? */
 
-}
-
-@media (max-width: 360px) and (orientation: portrait) {
-
-    /* stylowanie mojego imieni na gorze */
-    header h1 {
-        text-align: center;
-        font-weight: 300;
-        font-size: 40px;
-    }
-
-    .main header p {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .wrapper .aside p {
-        font-size: 14px;
-    }
-
-    header {
-        padding-bottom: 940px;
-    }
-
-    .intro h2 {
-        font-size: 20px;
-    }
-
-    .description p {
-        font-size: 12px;
-    }
-
-    .description p:nth-of-type(1) {
-        font-size: 16px;
-    }
-
-    .reference1 {
-        padding-right: 50px;
-    }
-
-}
-
-/* ZAPYTANIE O MEDIA W POZIOMIE */
-
-@media (max-width: 823px) and (orientation: landscape) {
-
-    div.wrapper {
-        margin: 0 auto;
-    }
-
-    div.aside {
-        width: 25%;
-    }
-
-    .aside h3 {
-        font-size: 16px;
-    }
-
-    .aside p {
-        font-size: 12px;
-    }
-
-    .aside h3+p {
-        min-height: 150vh;
-    }
-
-    .hobby i {
-        padding: 5px;
-        font-size: 30px;
-    }
-
-    .text {
-        font-size: 14px;
-    }
-
-    .intro h2 {
-        font-size: 22px;
-    }
-
-    .intro i {
-        font-size: 22px;
-    }
-
-    .data {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-@media (max-width: 736px) and (orientation: landscape) {
-
-    div.aside {
-        width: 27%;
-    }
-
-    .aside h3+p {
-        min-height: 140vh;
-    }
-
-    .text {
-        font-size: 12px;
-    }
-
-    .intro h2 {
-        font-size: 20px;
-    }
-
-    .intro i {
-        font-size: 20px;
-    }
-
-    .description p:nth-of-type(1) {
-        font-size: 16px;
-    }
-
-    /* .hobby i {
-        padding: 5px;
-        font-size: 30px;
-    } */
-
-    .data {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 667px) and (orientation: landscape) {
-
-    .aside h3 {
-        font-size: 14px;
-    }
-
-    .aside p {
-        font-size: 11px;
-    }
-
-    .aside h3+p {
-        min-height: 160vh;
-    }
-
-    .hobby i {
-        padding: 5px;
-        font-size: 25px;
-    }
-
-    .text {
-        font-size: 13px;
-    }
-
-    .text i {
-        display: none;
-    }
-
-    .text .info {
-        padding-right: 20px;
-    }
-
-    .intro h2 {
-        font-size: 20px;
-    }
-
-    .intro i {
-        font-size: 20px;
-    }
-
-    .data {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-@media (max-width: 640px) and (orientation: landscape) {
-
-    header h1 {
-        padding-bottom: 10px;
-        font-size: 40px;
-    }
-
-    div.aside {
-        width: 30%;
-    }
-
-    .aside p {
-        font-size: 12px;
-    }
-
-    .aside h3+p {
-        min-height: 150vh;
-    }
-
-    .text {
-        font-size: 12px;
-    }
-
-    .text i {
-        display: none;
-    }
-
-    .text .info {
-        padding-right: 20px;
-    }
-
-    .data {
-        font-size: 12px;
-        line-height: 18px;
-    }
 }
