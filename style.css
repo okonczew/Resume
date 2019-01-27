@@ -140,7 +140,12 @@ header p {
 
 /* nadanie szerokości części z rokiem i miastem */
 .info {
-    width: 40%;
+    width: 20%;
+    padding-right: 20px;
+}
+
+.description {
+    width: 60%;
 }
 
 /* miedzy opisami w prawej kolumie są odstepy */
