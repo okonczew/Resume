@@ -12,7 +12,7 @@
     }
 
     .aside h3+p {
-        min-height: 37vh;
+        min-height: 42vh;
     }
 }
 
@@ -115,7 +115,7 @@
 
     /* oddalenie hobbies od education, czyli headera od sekcji 1  */
     header {
-        padding-bottom: 1090px;
+        padding-bottom: 1080px;
     }
 
     /* stylowanie mojego imieni na gorze */
@@ -208,14 +208,14 @@
     }
 
     header {
-        padding-bottom: 1000px;
+        padding-bottom: 1020px;
     }
 }
 
 @media (max-width: 375px) and (orientation: portrait) {
 
     header {
-        padding-bottom: 1000px;
+        padding-bottom: 1040px;
     }
 }
 
@@ -303,14 +303,14 @@
     }
 
     .aside h3+p {
-        min-height: 55vh;
+        min-height: 60vh;
     }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
 
     .aside h3+p {
-        min-height: 70vh;
+        min-height: 77vh;
     }
 
     .hobby i {
@@ -367,9 +367,10 @@
 @media (max-width: 812px) and (orientation: landscape) {
 
     .aside h3+p {
-        min-height: 150vh;
+        min-height: 157vh;
     }
 }
+
 
 @media (max-width: 736px) and (orientation: landscape) {
 
@@ -378,7 +379,7 @@
     }
 
     .aside h3+p {
-        min-height: 145vh;
+        min-height: 160vh;
     }
 
     .text {
@@ -418,7 +419,7 @@
     }
 
     .aside h3+p {
-        min-height: 160vh;
+        min-height: 180vh;
     }
 
     .hobby i {
@@ -468,7 +469,7 @@
     }
 
     .aside h3+p {
-        min-height: 170vh;
+        min-height: 195vh;
     }
 
     .text {
@@ -500,7 +501,7 @@
     }
 
     .aside h3+p {
-        min-height: 190vh;
+        min-height: 220vh;
     }
 
     .description p {
