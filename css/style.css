@@ -185,8 +185,14 @@ header p {
     color: #ff9e30;
 }
 
+/* animowanie obrazków w portfolio */
 .text img {
     padding-left: 40px;
+    transition: .3s;
+}
+
+.text img:hover {
+    transform: scale(1.2);
 }
 
 .portfolio .description p {
