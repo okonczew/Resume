@@ -185,6 +185,14 @@ header p {
     color: #ff9e30;
 }
 
+.text img {
+    padding-left: 40px;
+}
+
+.portfolio .description p {
+    padding-left: 45px;
+}
+
 /* nadanie szerokości części z rokiem i miastem */
 .info {
     width: 20%;
