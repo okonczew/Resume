@@ -151,6 +151,60 @@ header p {
     font-size: 23px;
 }
 
+nav ul li:nth-last-of-type(1) a {
+    animation: shakes 5s linear infinite;
+}
+
+@keyframes shakes {
+    0% {
+        transform: translateX(0)
+    }
+
+    90% {
+        transform: translateX(0)
+    }
+
+    91% {
+        transform: translateX(15px)
+    }
+
+    92% {
+        transform: translateX(-15%px)
+    }
+
+    93% {
+        transform: translateX(15px)
+    }
+
+    94% {
+        transform: translateX(-15px)
+    }
+
+    95% {
+        transform: translateX(15px)
+    }
+
+    96% {
+        transform: translateX(-15px)
+    }
+
+    97% {
+        transform: translateX(15px)
+    }
+
+    98% {
+        transform: translateX(-15px)
+    }
+
+    99% {
+        transform: translateX(15px)
+    }
+
+    100% {
+        transform: translateX(-15px)
+    }
+}
+
 /* stylowanie pierwszej sekcji - Edukacja */
 
 .intro {
