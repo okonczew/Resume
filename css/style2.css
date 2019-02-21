@@ -10,33 +10,25 @@
     header {
         margin-bottom: 8vh;
     }
-
-    .aside h3+p {
-        min-height: 42vh;
-    }
 }
 
-@media (max-width: 915px) and (orientation: portrait) {
+/* @media (max-width: 915px) and (orientation: portrait) {
 
     .aside h3+p {
         min-height: 65vh;
     }
-}
+} */
 
-@media (max-width: 860px) and (orientation: portrait) {
+/* @media (max-width: 860px) and (orientation: portrait) {
 
     .hobby i {
         font-size: 25px;
     }
 
-    .aside h3+p {
-        min-height: 65vh;
-    }
-
     .data {
         line-height: 20px;
     }
-}
+} */
 
 @media (max-width: 768px) and (orientation: portrait) {
 
@@ -48,14 +40,10 @@
         font-size: 12px;
     }
 
-    .aside h3+p {
-        min-height: 50vh;
-    }
-
     .hobby i {
         margin-bottom: 20px;
         padding: 10px;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .main p {
@@ -301,20 +289,12 @@
         min-height: 130vh;
         margin: 0 auto;
     }
-
-    .aside h3+p {
-        min-height: 60vh;
-    }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
 
-    .aside h3+p {
-        min-height: 77vh;
-    }
-
     .hobby i {
-        font-size: 20px;
+        font-size: 35px;
     }
 }
 
@@ -337,8 +317,8 @@
         font-size: 12px;
     }
 
-    .aside h3+p {
-        min-height: 140vh;
+    header h1 {
+        font-size: 40px;
     }
 
     .hobby i {
@@ -362,24 +342,16 @@
         font-size: 14px;
         line-height: 20px;
     }
-}
 
-@media (max-width: 812px) and (orientation: landscape) {
-
-    .aside h3+p {
-        min-height: 157vh;
+    nav ul li a {
+        font-size: 14px;
     }
 }
-
 
 @media (max-width: 736px) and (orientation: landscape) {
 
     div.aside {
         width: 27%;
-    }
-
-    .aside h3+p {
-        min-height: 160vh;
     }
 
     .text {
@@ -398,11 +370,6 @@
         font-size: 18px;
     }
 
-    /* .hobby i {
-        padding: 5px;
-        font-size: 30px;
-    } */
-
     .data {
         font-size: 14px;
     }
@@ -416,10 +383,6 @@
 
     .aside p {
         font-size: 11px;
-    }
-
-    .aside h3+p {
-        min-height: 180vh;
     }
 
     .hobby i {
@@ -451,6 +414,14 @@
         font-size: 14px;
         line-height: 20px;
     }
+
+    .text img {
+        padding-left: 0;
+    }
+
+    .portfolio .description p {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
@@ -466,10 +437,6 @@
 
     .aside p {
         font-size: 12px;
-    }
-
-    .aside h3+p {
-        min-height: 195vh;
     }
 
     .text {
@@ -498,10 +465,6 @@
 
     div.aside {
         width: 34%;
-    }
-
-    .aside h3+p {
-        min-height: 220vh;
     }
 
     .description p {
