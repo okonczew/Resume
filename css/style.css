@@ -62,7 +62,7 @@ div.aside {
 }
 
 .aside img:hover {
-    transform: rotate(3600deg);
+    /* transform: rotate(3600deg); */
     width: 95%;
 }
 
