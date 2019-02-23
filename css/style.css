@@ -108,10 +108,82 @@ div.contact {
     transition: .3s;
 }
 
-.hobby i:hover {
-    color: #ff9e30;
-    transform: rotate(360deg);
+/* animacja krecacych sie ikonek */
+.hobby i:nth-of-type(1) {
+    animation: move 3s linear infinite;
 }
+
+.hobby i:nth-of-type(2) {
+    animation: move2 3s linear infinite;
+}
+
+.hobby i:nth-of-type(3) {
+    animation: move3 3s linear infinite;
+}
+
+@keyframes move {
+
+    0% {
+        transform: rotate(360deg);
+    }
+
+    33% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes move2 {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    33% {
+        transform: rotate(0);
+    }
+
+    34% {
+        transform: rotate(360deg);
+    }
+
+    65% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes move3 {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    65% {
+        transform: rotate(0);
+    }
+
+    66% {
+        transform: rotate(360deg);
+    }
+
+    99% {
+        transform: rotate(0);
+    }
+
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
 
 /* oddalenie srodkowej ikonki od 1 i 3 */
 .hobby i:nth-of-type(2) {
