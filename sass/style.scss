@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+div.wrapper {
+    display: flex;
+    max-width: 1200px;
+    min-height: 150vh;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.aside {
+    width: 30%;
+    background: linear-gradient(to bottom, #ff9e30 0%, rgb(220, 61, 220) 100%);
+
+    img {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            width: 95%;
+        }
+    }
+
+    h3 {
+        padding: 5px 0;
+        margin: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: black;
+        color: #ff9e30;
+        letter-spacing: 1px;
+    }
+
+    &+p {
+        text-align: justify;
+    }
+
+    // boczne marginesy w paragrafach aside
+    p {
+        padding: 0 30px;
+    }
+
+    // stylowanie danych w czesci contact
+    div.contact {
+        margin: 25px 0;
+        line-height: 20px;
+    }
+
+    .wrapper .contact p:nth-of-type(1) {
+        font-weight: bold;
+    }
+}
+
+.hobby {
+    text-align: center;
+
+    i {
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: 45px;
+
+
+        &:nth-of-type(1) {
+            animation: move 3s linear infinite;
+        }
+
+        &:nth-of-type(2) {
+            animation: move2 3s linear infinite;
+            margin: 0 20px;
+        }
+
+        &:nth-of-type(3) {
+            animation: move3 3s linear infinite;
+        }
+    }
+}
+
+@keyframes move {
+
+    0% {
+        transform: rotate(360deg);
+    }
+
+    33% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes move2 {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    33% {
+        transform: rotate(0);
+    }
+
+    34% {
+        transform: rotate(360deg);
+    }
+
+    65% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes move3 {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    65% {
+        transform: rotate(0);
+    }
+
+    66% {
+        transform: rotate(360deg);
+    }
+
+    99% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+// MAIN - cześć główna
+
+div.main {
+    flex-grow: 1;
+    padding: 40px 30px;
+    background-color: beige;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+
+        li {
+            min-width: 15%;
+            text-align: center;
+
+            &:nth-last-of-type(1) a {
+                animation: shakes 5s linear infinite;
+            }
+
+            a {
+                display: block;
+                margin: 0 10px;
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: rgb(220, 61, 220);
+                }
+            }
+        }
+    }
+}
+
+@keyframes shakes {
+    0% {
+        transform: translateX(0)
+    }
+
+    90% {
+        transform: translateX(0)
+    }
+
+    91% {
+        transform: translateX(15px)
+    }
+
+    92% {
+        transform: translateX(-15%px)
+    }
+
+    93% {
+        transform: translateX(15px)
+    }
+
+    94% {
+        transform: translateX(-15px)
+    }
+
+    95% {
+        transform: translateX(15px)
+    }
+
+    96% {
+        transform: translateX(-15px)
+    }
+
+    97% {
+        transform: translateX(15px)
+    }
+
+    98% {
+        transform: translateX(-15px)
+    }
+
+    99% {
+        transform: translateX(15px)
+    }
+
+    100% {
+        transform: translateX(-15px)
+    }
+}
+
+// stylowanie headera
+header {
+    margin-bottom: 15vh;
+
+    h1 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 300;
+    }
+}
+
+.intro i {
+    color: #ff9e30;
+}
+
+header span {
+    color: #ff9e30;
+
+    p {
+        font-size: 23px;
+    }
+}
+
+// stylowanie pierwszej sekcji - Edukacja
+
+.intro {
+
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff9e30;
+
+    i,
+    h2 {
+        float: left;
+    }
+
+    i {
+        font-size: 25px;
+        padding-right: 20px;
+    }
+}
+
+// pozycjonowanie elementów w  sekcji education 
+// flexbox do pozycjonowania w ROW ustawił obok siebie 
+.text {
+    display: flex;
+    padding-top: 35px;
+
+    // oddalenie kółek od dat i miast
+    i {
+        padding-right: 30px;
+        font-size: 12px;
+        color: #ff9e30;
+    }
+
+    // animowanie obrazków w portfolio
+    img {
+        padding-left: 20px;
+        width: 100%;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.portfolio .description p {
+    padding-left: 45px;
+}
+
+// nadanie szerokości części z rokiem i miastem 
+.info {
+    width: 20%;
+    padding-right: 20px;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.description {
+    width: 60%;
+
+    // miedzy opisami w prawej kolumie są odstepy 
+    p {
+        padding-bottom: 10px;
+
+        &:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// dodalam klase last do ostatniego wymienianego podpunktu zeby nadac mu margin czyli oddalenie od kolejnej sekcji
+.last {
+    margin-bottom: 60px;
+}
+
+/* nagłówki poszczególnych sekcji drukowanymi */
+main h2 {
+    text-transform: uppercase;
+}
+
+.data {
+    display: flex;
+    padding-top: 35px;
+    line-height: 25px;
+
+    .reference1 {
+        padding-right: 200px;
+    }
+}

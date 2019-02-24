@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,37 +11,9 @@
     content: "";
 }
 
-nav {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-nav ul li {
-    min-width: 15%;
-    text-align: center;
-}
-
-nav ul li a {
-    display: block;
-    /* padding: 10px; */
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    /* color: #ff9e30; */
-    /* color: rgb(169, 41, 169); */
-    color: rgb(220, 61, 220);
-}
-
 div.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1200px;
     min-height: 150vh;
@@ -49,35 +23,24 @@ div.wrapper {
 
 div.aside {
     width: 30%;
-    background-color: #ff9e30;
-    background: linear-gradient(to bottom, #ff9e30 0%, rgb(220, 61, 220) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff9e30), to(#dc3ddc));
+    background: linear-gradient(to bottom, #ff9e30 0%, #dc3ddc 100%);
 }
 
-.aside img {
+div.aside img {
     display: block;
     margin: 20px auto;
     width: 80%;
     border-radius: 50%;
+    -webkit-transition: .3s;
     transition: .3s;
 }
 
-.aside img:hover {
-    /* transform: rotate(3600deg); */
+div.aside img:hover {
     width: 95%;
 }
 
-/* stylowanie danych w czesci contact */
-div.contact {
-    margin: 25px 0;
-    line-height: 20px;
-}
-
-.wrapper .contact p:nth-of-type(1) {
-    font-weight: bold;
-}
-
-/* stylowanie 3 nagłówków w aside */
-.aside h3 {
+div.aside h3 {
     padding: 5px 0;
     margin: 20px 0;
     text-align: center;
@@ -87,117 +50,359 @@ div.contact {
     letter-spacing: 1px;
 }
 
-/* boczne marginesy w paragrafach aside */
-.aside p {
-    padding: 0 30px;
-}
-
-/* stylowanie tekstu pod About me  */
-.aside h3+p {
-    /* min-height: 70vh; */
+div.aside+p {
     text-align: justify;
 }
 
-/* stylowanie hobby */
+div.aside p {
+    padding: 0 30px;
+}
+
+div.aside div.contact {
+    margin: 25px 0;
+    line-height: 20px;
+}
+
+div.aside .wrapper .contact p:nth-of-type(1) {
+    font-weight: bold;
+}
+
 .hobby {
     text-align: center;
 }
 
-/* stylowanie ikonek w hobby */
 .hobby i {
     margin-bottom: 20px;
     padding: 15px;
     font-size: 45px;
 }
 
-/* animacja krecacych sie ikonek */
 .hobby i:nth-of-type(1) {
+    -webkit-animation: move 3s linear infinite;
     animation: move 3s linear infinite;
 }
 
 .hobby i:nth-of-type(2) {
+    -webkit-animation: move2 3s linear infinite;
     animation: move2 3s linear infinite;
+    margin: 0 20px;
 }
 
 .hobby i:nth-of-type(3) {
+    -webkit-animation: move3 3s linear infinite;
     animation: move3 3s linear infinite;
 }
 
-@keyframes move {
-
+@-webkit-keyframes move {
     0% {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 
     33% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 
     100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@keyframes move {
+    0% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    33% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes move2 {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    33% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    34% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    65% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 }
 
 @keyframes move2 {
-
     0% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 
     33% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 
     34% {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 
     65% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 
     100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes move3 {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    65% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    66% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    99% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 }
 
 @keyframes move3 {
-
     0% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 
     65% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 
     66% {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 
     99% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
-
 
     100% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 }
 
-/* oddalenie srodkowej ikonki od 1 i 3 */
-.hobby i:nth-of-type(2) {
-    margin: 0 20px;
-}
-
-/* MAIN - cześć główna */
 div.main {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     padding: 40px 30px;
     background-color: beige;
 }
 
-/* stylowanie headera */
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    min-width: 15%;
+    text-align: center;
+}
+
+nav ul li:nth-last-of-type(1) a {
+    -webkit-animation: shakes 5s linear infinite;
+    animation: shakes 5s linear infinite;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #dc3ddc;
+}
+
+@-webkit-keyframes shakes {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    90% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    91% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    92% {
+        -webkit-transform: translateX(-15% px);
+        transform: translateX(-15% px);
+    }
+
+    93% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    94% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+
+    95% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    96% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+
+    97% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    98% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+
+    99% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+}
+
+@keyframes shakes {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    90% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    91% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    92% {
+        -webkit-transform: translateX(-15% px);
+        transform: translateX(-15% px);
+    }
+
+    93% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    94% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+
+    95% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    96% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+
+    97% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    98% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+
+    99% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+}
+
 header {
     margin-bottom: 15vh;
 }
@@ -210,7 +415,6 @@ header h1 {
     font-weight: 300;
 }
 
-
 .intro i {
     color: #ff9e30;
 }
@@ -219,68 +423,11 @@ header span {
     color: #ff9e30;
 }
 
-header p {
+header span p {
     font-size: 23px;
 }
 
-nav ul li:nth-last-of-type(1) a {
-    animation: shakes 5s linear infinite;
-}
-
-@keyframes shakes {
-    0% {
-        transform: translateX(0)
-    }
-
-    90% {
-        transform: translateX(0)
-    }
-
-    91% {
-        transform: translateX(15px)
-    }
-
-    92% {
-        transform: translateX(-15%px)
-    }
-
-    93% {
-        transform: translateX(15px)
-    }
-
-    94% {
-        transform: translateX(-15px)
-    }
-
-    95% {
-        transform: translateX(15px)
-    }
-
-    96% {
-        transform: translateX(-15px)
-    }
-
-    97% {
-        transform: translateX(15px)
-    }
-
-    98% {
-        transform: translateX(-15px)
-    }
-
-    99% {
-        transform: translateX(15px)
-    }
-
-    100% {
-        transform: translateX(-15px)
-    }
-}
-
-/* stylowanie pierwszej sekcji - Edukacja */
-
 .intro {
-
     padding-bottom: 10px;
     border-bottom: 2px solid #ff9e30;
 }
@@ -295,28 +442,28 @@ nav ul li:nth-last-of-type(1) a {
     padding-right: 20px;
 }
 
-/* pozycjonowanie elementów w  sekcji education */
-/* flexbox do pozycjonowania w ROW ustawił obok siebie */
 .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 35px;
 }
 
-/* oddalenie kółek od dat i miast */
 .text i {
     padding-right: 30px;
     font-size: 12px;
     color: #ff9e30;
 }
 
-/* animowanie obrazków w portfolio */
 .text img {
     padding-left: 20px;
     width: 100%;
+    -webkit-transition: .3s;
     transition: .3s;
 }
 
 .text img:hover {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -324,29 +471,30 @@ nav ul li:nth-last-of-type(1) a {
     padding-left: 45px;
 }
 
-/* nadanie szerokości części z rokiem i miastem */
 .info {
     width: 20%;
     padding-right: 20px;
+}
+
+.info a {
+    color: black;
+    text-decoration: none;
 }
 
 .description {
     width: 60%;
 }
 
-/* miedzy opisami w prawej kolumie są odstepy */
 .description p {
     padding-bottom: 10px;
 }
 
-/* pogrubienie nazw szkoly i uniwerku */
 .description p:nth-of-type(1) {
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
 }
 
-/* dodalam klase last do ostatniego wymienianego podpunktu zeby nadac mu margin czyli oddalenie od kolejnej sekcji */
 .last {
     margin-bottom: 60px;
 }
@@ -357,16 +505,15 @@ main h2 {
 }
 
 .data {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 35px;
     line-height: 25px;
 }
 
-.reference1 {
+.data .reference1 {
     padding-right: 200px;
 }
 
-.info a {
-    color: black;
-    text-decoration: none;
-}
+/*# sourceMappingURL=style.css.map */
