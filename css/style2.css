@@ -14,7 +14,7 @@
   div .aside {
     width: 28%;
   }
-  .aside p {
+  div .aside p {
     font-size: 12px;
   }
   .hobby i {
@@ -28,7 +28,7 @@
   .data {
     line-height: 15px;
   }
-  .reference1 {
+  .data .reference1 {
     padding-right: 170px;
   }
 }
@@ -41,6 +41,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  div.wrapper .contact {
+    text-align: center;
+    line-height: 25px;
+  }
   div.aside {
     position: absolute;
     left: 0;
@@ -52,24 +56,25 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#ff9e30), to(beige));
     background: linear-gradient(to bottom, #ff9e30 0%, beige 100%);
   }
-  .wrapper .contact {
-    text-align: center;
-    line-height: 25px;
+  div.aside img {
+    margin: 20px auto;
+    width: 50%;
+  }
+  div.aside img:hover {
+    width: 50%;
   }
   .wrapper .aside p {
     font-size: 18px;
   }
-  .aside img {
-    margin: 20px auto;
-    width: 50%;
-  }
   div.contact {
     margin: 20px 0;
   }
-  .aside img:hover {
-    -webkit-transform: rotate(3600deg);
-            transform: rotate(3600deg);
-    width: 60%;
+  div.contact p {
+    text-align: center;
+    font-size: 16px;
+  }
+  div.contact p:nth-of-type(1) {
+    font-weight: bold;
   }
   .hobby i {
     padding: 10px;
@@ -84,21 +89,21 @@
             justify-content: center;
     font-size: 17px;
   }
-  /* oddalenie hobbies od education, czyli headera od sekcji 1  */
-  header {
-    padding-bottom: 1090px;
+  nav ul a {
+    font-size: 20px;
   }
-  /* stylowanie mojego imieni na gorze */
-  header h1 {
+  /* oddalenie hobbies od education, czyli headera od sekcji 1  */
+  .main header {
+    padding-bottom: 1090px;
+    /* stylowanie mojego imieni na gorze */
+  }
+  .main header h1 {
     text-align: center;
     font-weight: 300;
   }
   .main header p {
-    font-size: 24px;
     text-align: center;
-  }
-  .main p {
-    font-size: 14px;
+    font-size: 20px;
   }
   /*  ulozenie w kolumnach informacji o edukacji itp*/
   .text {
@@ -107,8 +112,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 50px;
+    /* wycentrowanie nazw szkol firm etc. */
   }
-  /* wycentrowanie nazw szkol firm etc. */
   .text .info,
   .text .description {
     -webkit-box-pack: center;
@@ -129,34 +134,30 @@
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    /* rozmiar dat i miast */
   }
-  /* rozmiar dat i miast */
-  .info p {
+  div.info p {
     font-size: 16px;
     padding-bottom: 15px;
     padding-right: 15px;
   }
   .description {
     width: 100%;
+    /* rozmiar szkoły, firmy itp, tekstu po prawej */
   }
-  /* rozmiar szkoły, firmy itp, tekstu po prawej */
   .description p {
     padding-bottom: 15px;
     font-size: 17px;
     line-height: 22px;
+    /* pogrubienie nazw szkoly i uniwerku */
+    /* oddalenie od siebie poszczegolnych szkol itp */
   }
-  /* pogrubienie nazw szkoly i uniwerku */
   .description p:nth-of-type(1) {
     font-weight: bold;
     font-size: 18px;
   }
-  /* oddalenie od siebie poszczegolnych szkol itp */
   .description p:nth-last-of-type(1) {
     padding-bottom: 15px;
-  }
-  /* referencje */
-  .data {
-    line-height: 16px;
   }
   .portfolio .description p {
     padding-left: 0;
@@ -165,11 +166,15 @@
     padding-left: 0;
     padding-bottom: 25px;
   }
-  .reference1 {
-    padding-right: 100px;
-  }
   .last {
     margin-bottom: 50px;
+  }
+  /* referencje */
+  .data {
+    line-height: 16px;
+  }
+  .data .reference1 {
+    padding-right: 150px;
   }
 }
 
