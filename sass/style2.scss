@@ -287,7 +287,6 @@
     }
 }
 
-
 @media (max-width: 823px) and (orientation: landscape) {
 
     div.wrapper {
@@ -296,10 +295,10 @@
 
     div.aside {
         width: 25%;
-    }
 
-    .aside p {
-        font-size: 12px;
+        & p {
+            font-size: 12px;
+        }
     }
 
     header h1 {
@@ -315,10 +314,7 @@
         font-size: 14px;
     }
 
-    .intro h2 {
-        font-size: 22px;
-    }
-
+    .intro h2,
     .intro i {
         font-size: 22px;
     }
@@ -343,14 +339,6 @@
         font-size: 14px;
     }
 
-    .intro h2 {
-        font-size: 20px;
-    }
-
-    .intro i {
-        font-size: 20px;
-    }
-
     .description p:nth-of-type(1) {
         font-size: 18px;
     }
@@ -364,10 +352,10 @@
 
     .aside h3 {
         font-size: 14px;
-    }
 
-    .aside p {
-        font-size: 11px;
+        p {
+            font-size: 11px;
+        }
     }
 
     .hobby i {
@@ -377,20 +365,17 @@
 
     .text {
         font-size: 13px;
+
+        i {
+            display: none;
+        }
+
+        .info {
+            padding-right: 20px;
+        }
     }
 
-    .text i {
-        display: none;
-    }
-
-    .text .info {
-        padding-right: 20px;
-    }
-
-    .intro h2 {
-        font-size: 20px;
-    }
-
+    .intro h2,
     .intro i {
         font-size: 20px;
     }
@@ -418,22 +403,18 @@
 
     div.aside {
         width: 30%;
-    }
 
-    .aside p {
-        font-size: 12px;
+        p {
+            font-size: 12px;
+        }
     }
 
     .text {
         font-size: 12px;
-    }
 
-    .text i {
-        display: none;
-    }
-
-    .text .info {
-        padding-right: 20px;
+        i {
+            display: none;
+        }
     }
 
     .data {
@@ -465,6 +446,11 @@
 
     div.wrapper {
         flex-direction: column;
+
+        .aside p {
+            font-size: 16px;
+            text-align: center;
+        }
     }
 
     div.aside {
@@ -474,38 +460,29 @@
         order: 1;
         width: 100%;
         background: linear-gradient(to bottom, #ff9e30 0%, beige 100%);
+
+        & img {
+            margin: 20px auto;
+            width: 50%;
+
+            &:hover {
+                width: 50%;
+            }
+        }
     }
 
-    .wrapper .contact {
-        text-align: center;
-        line-height: 25px;
+    div.contact p:nth-of-type(1) {
+        font-weight: bold;
     }
 
-    .wrapper .aside p {
-        font-size: 18px;
-    }
-
-    .aside img {
-        margin: 20px auto;
-        width: 50%;
-    }
-
-    div.contact {
-        margin: 20px 0;
-    }
-
-    .aside img:hover {
-        transform: rotate(3600deg);
-        width: 60%;
-    }
 
     .hobby i {
         padding: 10px;
         font-size: 45px;
-    }
 
-    .hobby i:nth-of-type(2) {
-        margin: 0 35px;
+        &:nth-of-type(2) {
+            margin: 0 35px;
+        }
     }
 
     nav ul {
@@ -514,36 +491,32 @@
     }
 
     /* oddalenie hobbies od education, czyli headera od sekcji 1  */
-    header {
-        padding-bottom: 1090px;
-    }
+    .main header {
+        padding-bottom: 1020px;
 
-    /* stylowanie mojego imieni na gorze */
-    header h1 {
-        text-align: center;
-        font-weight: 300;
-    }
+        /* stylowanie mojego imieni na gorze */
+        h1 {
+            text-align: center;
+            font-weight: 300;
+        }
 
-    .main header p {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .main p {
-        font-size: 14px;
+        p {
+            font-size: 24px;
+            text-align: center;
+        }
     }
 
     /*  ulozenie w kolumnach informacji o edukacji itp*/
     .text {
         flex-direction: column;
         padding-top: 50px;
-    }
 
-    /* wycentrowanie nazw szkol firm etc. */
-    .text .info,
-    .text .description {
-        justify-content: center;
-        text-align: center;
+        /* wycentrowanie nazw szkol firm etc. */
+        .info,
+        .description {
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     /* ukrycie ikonek */
@@ -569,29 +542,33 @@
 
     .description {
         width: 100%;
-    }
 
-    /* rozmiar szkoły, firmy itp, tekstu po prawej */
-    .description p {
-        padding-bottom: 15px;
-        font-size: 17px;
-        line-height: 22px;
-    }
+        /* rozmiar szkoły, firmy itp, tekstu po prawej */
+        p {
+            padding-bottom: 15px;
+            font-size: 17px;
+            line-height: 22px;
 
-    /* pogrubienie nazw szkoly i uniwerku */
-    .description p:nth-of-type(1) {
-        font-weight: bold;
-        font-size: 18px;
-    }
+            /* pogrubienie nazw szkoly i uniwerku */
+            &:nth-of-type(1) {
+                font-weight: bold;
+                font-size: 18px;
+            }
 
-    /* oddalenie od siebie poszczegolnych szkol itp */
-    .description p:nth-last-of-type(1) {
-        padding-bottom: 15px;
+            /* oddalenie od siebie poszczegolnych szkol itp */
+            &:nth-last-of-type(1) {
+                padding-bottom: 15px;
+            }
+        }
     }
 
     /* referencje */
     .data {
         line-height: 16px;
+
+        .reference1 {
+            padding-right: 100px;
+        }
     }
 
     .portfolio .description p {
@@ -601,10 +578,6 @@
     .text img {
         padding-left: 0;
         padding-bottom: 25px;
-    }
-
-    .reference1 {
-        padding-right: 100px;
     }
 
     .last {

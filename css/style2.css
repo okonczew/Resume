@@ -252,7 +252,7 @@
   div.aside {
     width: 25%;
   }
-  .aside p {
+  div.aside p {
     font-size: 12px;
   }
   header h1 {
@@ -265,9 +265,7 @@
   .text {
     font-size: 14px;
   }
-  .intro h2 {
-    font-size: 22px;
-  }
+  .intro h2,
   .intro i {
     font-size: 22px;
   }
@@ -287,12 +285,6 @@
   .text {
     font-size: 14px;
   }
-  .intro h2 {
-    font-size: 20px;
-  }
-  .intro i {
-    font-size: 20px;
-  }
   .description p:nth-of-type(1) {
     font-size: 18px;
   }
@@ -305,7 +297,7 @@
   .aside h3 {
     font-size: 14px;
   }
-  .aside p {
+  .aside h3 p {
     font-size: 11px;
   }
   .hobby i {
@@ -321,9 +313,7 @@
   .text .info {
     padding-right: 20px;
   }
-  .intro h2 {
-    font-size: 20px;
-  }
+  .intro h2,
   .intro i {
     font-size: 20px;
   }
@@ -347,7 +337,7 @@
   div.aside {
     width: 30%;
   }
-  .aside p {
+  div.aside p {
     font-size: 12px;
   }
   .text {
@@ -355,9 +345,6 @@
   }
   .text i {
     display: none;
-  }
-  .text .info {
-    padding-right: 20px;
   }
   .data {
     font-size: 12px;
@@ -387,6 +374,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  div.wrapper .aside p {
+    font-size: 16px;
+    text-align: center;
+  }
   div.aside {
     position: absolute;
     left: 0;
@@ -398,24 +389,15 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#ff9e30), to(beige));
     background: linear-gradient(to bottom, #ff9e30 0%, beige 100%);
   }
-  .wrapper .contact {
-    text-align: center;
-    line-height: 25px;
-  }
-  .wrapper .aside p {
-    font-size: 18px;
-  }
-  .aside img {
+  div.aside img {
     margin: 20px auto;
     width: 50%;
   }
-  div.contact {
-    margin: 20px 0;
+  div.aside img:hover {
+    width: 50%;
   }
-  .aside img:hover {
-    -webkit-transform: rotate(3600deg);
-            transform: rotate(3600deg);
-    width: 60%;
+  div.contact p:nth-of-type(1) {
+    font-weight: bold;
   }
   .hobby i {
     padding: 10px;
@@ -431,20 +413,17 @@
     font-size: 17px;
   }
   /* oddalenie hobbies od education, czyli headera od sekcji 1  */
-  header {
-    padding-bottom: 1090px;
+  .main header {
+    padding-bottom: 1020px;
+    /* stylowanie mojego imieni na gorze */
   }
-  /* stylowanie mojego imieni na gorze */
-  header h1 {
+  .main header h1 {
     text-align: center;
     font-weight: 300;
   }
   .main header p {
     font-size: 24px;
     text-align: center;
-  }
-  .main p {
-    font-size: 14px;
   }
   /*  ulozenie w kolumnach informacji o edukacji itp*/
   .text {
@@ -453,8 +432,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 50px;
+    /* wycentrowanie nazw szkol firm etc. */
   }
-  /* wycentrowanie nazw szkol firm etc. */
   .text .info,
   .text .description {
     -webkit-box-pack: center;
@@ -484,19 +463,19 @@
   }
   .description {
     width: 100%;
+    /* rozmiar szkoły, firmy itp, tekstu po prawej */
   }
-  /* rozmiar szkoły, firmy itp, tekstu po prawej */
   .description p {
     padding-bottom: 15px;
     font-size: 17px;
     line-height: 22px;
+    /* pogrubienie nazw szkoly i uniwerku */
+    /* oddalenie od siebie poszczegolnych szkol itp */
   }
-  /* pogrubienie nazw szkoly i uniwerku */
   .description p:nth-of-type(1) {
     font-weight: bold;
     font-size: 18px;
   }
-  /* oddalenie od siebie poszczegolnych szkol itp */
   .description p:nth-last-of-type(1) {
     padding-bottom: 15px;
   }
@@ -504,15 +483,15 @@
   .data {
     line-height: 16px;
   }
+  .data .reference1 {
+    padding-right: 100px;
+  }
   .portfolio .description p {
     padding-left: 0;
   }
   .text img {
     padding-left: 0;
     padding-bottom: 25px;
-  }
-  .reference1 {
-    padding-right: 100px;
   }
   .last {
     margin-bottom: 50px;
