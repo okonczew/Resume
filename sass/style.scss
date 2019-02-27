@@ -42,23 +42,24 @@ div.aside {
         color: #ff9e30;
         letter-spacing: 1px;
     }
+}
 
-    // boczne marginesy w paragrafach aside
-    p {
-        padding: 0 30px;
-        text-align: justify;
-    }
+// boczne marginesy w paragrafach aside
+p {
+    padding: 0 30px;
+    text-align: justify;
+}
 
-    // stylowanie danych w czesci contact
-    div.contact {
-        margin: 25px 0;
-        line-height: 20px;
-    }
+// stylowanie danych w czesci contact
+div.contact {
+    margin: 25px 0;
+    line-height: 20px;
 
-    .wrapper .contact p:nth-of-type(1) {
+    p:nth-of-type(1) {
         font-weight: bold;
     }
 }
+
 
 .hobby {
     text-align: center;

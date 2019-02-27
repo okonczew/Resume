@@ -49,17 +49,17 @@ div.aside h3 {
   letter-spacing: 1px;
 }
 
-div.aside p {
+p {
   padding: 0 30px;
   text-align: justify;
 }
 
-div.aside div.contact {
+div.contact {
   margin: 25px 0;
   line-height: 20px;
 }
 
-div.aside .wrapper .contact p:nth-of-type(1) {
+div.contact p:nth-of-type(1) {
   font-weight: bold;
 }
 
