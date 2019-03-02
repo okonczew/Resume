@@ -60,7 +60,6 @@ div.aside {
     }
 }
 
-
 .hobby {
     text-align: center;
 
@@ -82,67 +81,6 @@ div.aside {
         &:nth-of-type(3) {
             animation: move3 3s linear infinite;
         }
-    }
-}
-
-@keyframes move {
-
-    0% {
-        transform: rotate(360deg);
-    }
-
-    33% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
-
-@keyframes move2 {
-
-    0% {
-        transform: rotate(0);
-    }
-
-    33% {
-        transform: rotate(0);
-    }
-
-    34% {
-        transform: rotate(360deg);
-    }
-
-    65% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
-
-@keyframes move3 {
-
-    0% {
-        transform: rotate(0);
-    }
-
-    65% {
-        transform: rotate(0);
-    }
-
-    66% {
-        transform: rotate(360deg);
-    }
-
-    99% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(0);
     }
 }
 
@@ -185,55 +123,6 @@ nav {
     }
 }
 
-@keyframes shakes {
-    0% {
-        transform: translateX(0)
-    }
-
-    90% {
-        transform: translateX(0)
-    }
-
-    91% {
-        transform: translateX(15px)
-    }
-
-    92% {
-        transform: translateX(-15%px)
-    }
-
-    93% {
-        transform: translateX(15px)
-    }
-
-    94% {
-        transform: translateX(-15px)
-    }
-
-    95% {
-        transform: translateX(15px)
-    }
-
-    96% {
-        transform: translateX(-15px)
-    }
-
-    97% {
-        transform: translateX(15px)
-    }
-
-    98% {
-        transform: translateX(-15px)
-    }
-
-    99% {
-        transform: translateX(15px)
-    }
-
-    100% {
-        transform: translateX(-15px)
-    }
-}
 
 // stylowanie headera
 header {
