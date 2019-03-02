@@ -63,6 +63,11 @@ div.aside div.contact p:nth-of-type(1) {
   font-weight: bold;
 }
 
+div.aside div.contact a {
+  color: black;
+  text-decoration: none;
+}
+
 .hobby {
   text-align: center;
 }
