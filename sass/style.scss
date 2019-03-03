@@ -1,3 +1,5 @@
+$asideColor: linear-gradient(to bottom, #ff9e30 0%, rgb(220, 61, 220) 100%);
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +21,7 @@ div.wrapper {
 
 div.aside {
     width: 30%;
-    background: linear-gradient(to bottom, #ff9e30 0%, rgb(220, 61, 220) 100%);
+    background: $asideColor;
 
     img {
         display: block;
