@@ -35,10 +35,6 @@ div.aside img {
   transition: .3s;
 }
 
-div.aside img:hover {
-  width: 95%;
-}
-
 div.aside h3 {
   padding: 5px 0;
   margin: 20px 0;
@@ -51,7 +47,7 @@ div.aside h3 {
 
 div.aside p {
   padding: 0 30px;
-  text-align: justify;
+  line-height: 1.5;
 }
 
 div.aside div.contact {
@@ -226,6 +222,7 @@ header span p {
 
 .description p {
   padding-bottom: 10px;
+  line-height: 1.5;
 }
 
 .description p:nth-of-type(1) {

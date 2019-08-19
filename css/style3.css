@@ -134,8 +134,8 @@
             transform: translateX(15px);
   }
   92% {
-    -webkit-transform: translateX(-15% px);
-            transform: translateX(-15% px);
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
   93% {
     -webkit-transform: translateX(15px);
@@ -185,8 +185,8 @@
             transform: translateX(15px);
   }
   92% {
-    -webkit-transform: translateX(-15% px);
-            transform: translateX(-15% px);
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
   93% {
     -webkit-transform: translateX(15px);
