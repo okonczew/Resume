@@ -109,7 +109,7 @@
 
     /* oddalenie hobbies od education, czyli headera od sekcji 1  */
     .main header {
-        padding-bottom: 1090px;
+        padding-bottom: 1600px;
 
         /* stylowanie mojego imieni na gorze */
         h1 {
@@ -226,12 +226,13 @@
     .data .reference1 {
         padding-right: 50px;
     }
-}
-
-@media (max-width: 411px) and (orientation: portrait) {
 
     .main header {
-        padding-bottom: 1120px;
+        padding-bottom: 1500px;
+    }
+
+    .description p:nth-last-of-type(1) {
+        text-align: left;
     }
 }
 
@@ -248,7 +249,7 @@
     }
 
     .main header {
-        padding-bottom: 1070px;
+        padding-bottom: 1400px;
 
     }
 
@@ -449,7 +450,7 @@
 
         .aside p {
             font-size: 16px;
-            text-align: center;
+            text-align: left;
         }
     }
 
@@ -492,7 +493,7 @@
 
     /* oddalenie hobbies od education, czyli headera od sekcji 1  */
     .main header {
-        padding-bottom: 1020px;
+        padding-bottom: 1350px;
 
         /* stylowanie mojego imieni na gorze */
         h1 {
@@ -558,6 +559,7 @@
             /* oddalenie od siebie poszczegolnych szkol itp */
             &:nth-last-of-type(1) {
                 padding-bottom: 15px;
+                text-align: left;
             }
         }
     }
